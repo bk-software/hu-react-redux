@@ -101,6 +101,19 @@ Date 14/12/2022
 * how to use basic proptyes like numer, string, boolean, func  
 * [PropTypes in react documentaioin](https://reactjs.org/docs/typechecking-with-proptypes.html)
 * We learned how to use shate to create new prop type
+
+### Homework for 14/12/2022
+* Create A Employee component that accept the following properties
+** Name:  required
+** lastName:  required
+** Job Title: optional
+** avatar: image type with url and alt
+** isAdmin: optional
+** childrensName: worker real life childrens - optional
+* Use prop types to validate the properties.
+* transfer the data to the component from parent component and display it nicely :)
+* Bonus use MUI components
+
 # Links
 
 [Course Repo](https://github.com/bk-software/hu-react-redux)
