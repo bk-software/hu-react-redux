@@ -114,6 +114,11 @@ Date 14/12/2022
 * transfer the data to the component from parent component and display it nicely :)
 * Bonus use MUI components
 
+* Second task
+* Create a wrapper component named NavBarLink instead of NavLink in the header.
+* Use the style function with it.
+* Use PropTypes
+
 # Links
 
 [Course Repo](https://github.com/bk-software/hu-react-redux)

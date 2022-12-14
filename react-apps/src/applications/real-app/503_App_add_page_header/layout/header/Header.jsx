@@ -8,10 +8,12 @@ import routes from '../../router/routes';
 function getNavLinkStyle({ isActive }) {
   if (isActive) {
     return {
+      all: 'unset',
       color: '#ffffffff',
     };
   } else {
     return {
+      all: 'unset',
       color: '#ffffffc9',
     };
   }

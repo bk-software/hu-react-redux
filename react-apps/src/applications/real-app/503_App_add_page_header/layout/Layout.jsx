@@ -3,6 +3,7 @@ import Footer from './footer/Footer';
 import Main from './main/Main';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
+import PropTypes from 'prop-types';
 
 function Layout({ children }) {
   return (
@@ -21,5 +22,9 @@ function Layout({ children }) {
     </Box>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;
