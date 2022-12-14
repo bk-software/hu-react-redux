@@ -97,7 +97,10 @@ Bonus
 Date 14/12/2022
 
 ### 008 events - how to create custom events
-
+### 009 props type - 
+* how to use basic proptyes like numer, string, boolean, func  
+* [PropTypes in react documentaioin](https://reactjs.org/docs/typechecking-with-proptypes.html)
+* We learned how to use shate to create new prop type
 # Links
 
 [Course Repo](https://github.com/bk-software/hu-react-redux)

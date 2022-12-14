@@ -1,16 +1,17 @@
-import PropTypes from 'prop-types';
+import PropTypes, { shape } from 'prop-types';
 
-function MyComp(props) {
-  return (
-    <div>
-      My Comp name: {props.name} num:{props.num}
-    </div>
-  );
+function MyComp({ children }) {
+  return <div>{children}</div>;
 }
 
+const imageType = shape({
+  url: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+});
+
 MyComp.propTypes = {
-  name: PropTypes.string,
-  num: PropTypes.number.isRequired,
+  children: PropTypes.arrayOf(PropTypes.element),
+  image: imageType,
 };
 
 export default MyComp;
