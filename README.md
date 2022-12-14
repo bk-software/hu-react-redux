@@ -94,6 +94,10 @@ Bonus
 * Create codesandbox and put the code there.
 
 
+Date 14/12/2022
+
+### 008 events - how to create custom events
+
 # Links
 
 [Course Repo](https://github.com/bk-software/hu-react-redux)
