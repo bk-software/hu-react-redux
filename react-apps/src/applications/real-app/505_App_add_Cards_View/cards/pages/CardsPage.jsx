@@ -1,5 +1,6 @@
 import Layout from '../../layout/Layout';
 import PageHeader from '../../components/PageHeader';
+import Cards from '../components/Cards';
 
 function CardsPage() {
   return (
@@ -8,6 +9,8 @@ function CardsPage() {
         title="Cards"
         subtitle="Here you can find business cards from all categories"
       />
+
+      <Cards />
     </Layout>
   );
 }
