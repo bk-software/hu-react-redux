@@ -119,6 +119,39 @@ Date 14/12/2022
 * Use the style function with it.
 * Use PropTypes
 
+Date 21/12/202
+### 009_useEffect
+* Mount - The first time that component is render
+* Update - The first and all the othes time
+* Component Did Update - Happen on mount and on every render
+* Without dependecies Array
+```js
+useEffect(() => {})
+```
+
+* Component Mount - Happn on Mount only - useEffect with Empty dependecies
+```js
+useEffect(() => {}, [])
+```
+
+* Component with dependecies - Happen on Mount and when the dependecy paramater is changed 
+```js
+useEffect(() => {}, [counter])
+```
+* Component Unmount
+
+* Component Did Unmount
+* We use to clear memory
+
+```js
+useEffect(() => {
+  return () => {
+    // This function will happen when component did unMount 
+  }
+}, [counter])
+```
+
+
 # Links
 
 [Course Repo](https://github.com/bk-software/hu-react-redux)
