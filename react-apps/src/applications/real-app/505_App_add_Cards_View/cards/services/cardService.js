@@ -1,4 +1,6 @@
-export const getCards = async () => {};
+export const getCards = async () => {
+  return cardsData;
+};
 
 const cardsData = [
   {
