@@ -7,7 +7,7 @@ function PageHeader({ title, subtitle }) {
   return (
     <Box pt={2}>
       <Typography variant="h2">{title}</Typography>
-      <Typography variant="h3">{subtitle}</Typography>
+      <Typography variant="h5">{subtitle}</Typography>
       <Divider />
     </Box>
   );
