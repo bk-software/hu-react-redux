@@ -151,6 +151,15 @@ useEffect(() => {
 }, [counter])
 ```
 
+### Homework for 21/12/2022
+* use json place holder to show all posts titles
+* When you press the post title show all the comments of that post
+* When you press again it will hide the comments
+*  https://jsonplaceholder.typicode.com/
+
+** Bonuses
+* Add paging show only 10 posts and add button for next 10
+
 
 # Links
 
