@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { Comments } from './Comments';
+import { CommentsView } from './CommentsView';
 
 export function Post({ post }) {
   const [showComments, setShowComments] = useState(false);
@@ -16,7 +16,7 @@ export function Post({ post }) {
     >
       <h2>{post.title}</h2>
       <p>{post.body}</p>
-      {showComments && <Comments postId={post.id} />}
+      {showComments && <CommentsView postId={post.id} />}
     </div>
   );
 }
