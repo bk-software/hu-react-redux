@@ -11,7 +11,10 @@ function Posts({ posts }) {
     <div>
       {posts.map((post) => {
         return (
-          <div>
+          <div
+            key={post.id}
+            style={{ border: '1px solid gray', paddingLeft: '10px' }}
+          >
             <h2>{post.title}</h2>
             <p>{post.body}</p>
           </div>
