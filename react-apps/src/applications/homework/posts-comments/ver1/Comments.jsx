@@ -1,4 +1,5 @@
 import { Comment } from './Comment';
+import PropTypes from 'prop-types';
 
 export function Comments({ comments }) {
   if (comments.length === 0) {
@@ -13,3 +14,7 @@ export function Comments({ comments }) {
     </div>
   );
 }
+
+Comments.propTypes = {
+  comments: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
