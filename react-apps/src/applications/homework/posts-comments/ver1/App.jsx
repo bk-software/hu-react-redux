@@ -7,7 +7,18 @@ function Posts({ posts }) {
     return <div>Loading posts...</div>;
   }
 
-  return <div>this is my posts {posts.length}</div>;
+  return (
+    <div>
+      {posts.map((post) => {
+        return (
+          <div>
+            <h2>{post.title}</h2>
+            <p>{post.body}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 //Wrapper Component for the posts
