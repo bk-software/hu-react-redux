@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Comment } from './Comment';
 
 export function Comments({ postId }) {
   const [comments, setComments] = useState();
@@ -19,9 +20,15 @@ export function Comments({ postId }) {
     return <div>Loading comments ...</div>;
   }
 
+  if (comments.length === 0) {
+    return <div>There is no comments for this post</div>;
+  }
+
   return (
     <div>
-      My comments {postId} {comments && comments.length}
+      {comments.map((comment) => (
+        <Comment key={comment.id} comment={comment} />
+      ))}
     </div>
   );
 }
