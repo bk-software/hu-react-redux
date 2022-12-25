@@ -168,6 +168,11 @@ Date 25/12/2022
 * Custom Hook for fetch data
 * Use Object to cache the fetched data
 
+### Homework
+* Use Material UI components to make our homework project to look nice
+* Use Circular for Loading
+* Use cards for posts view and comments
+
 # Links
 
 [Course Repo](https://github.com/bk-software/hu-react-redux)
