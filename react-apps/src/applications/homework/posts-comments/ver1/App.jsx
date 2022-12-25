@@ -2,6 +2,15 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
+function Post({ post }) {
+  return (
+    <div style={{ border: '1px solid gray', paddingLeft: '10px' }}>
+      <h2>{post.title}</h2>
+      <p>{post.body}</p>
+    </div>
+  );
+}
+
 function Posts({ posts }) {
   if (!posts) {
     return <div>Loading posts...</div>;
@@ -10,15 +19,7 @@ function Posts({ posts }) {
   return (
     <div>
       {posts.map((post) => {
-        return (
-          <div
-            key={post.id}
-            style={{ border: '1px solid gray', paddingLeft: '10px' }}
-          >
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
-          </div>
-        );
+        return <Post key={post.id} post={post} />;
       })}
     </div>
   );
