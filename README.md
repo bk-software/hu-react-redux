@@ -160,6 +160,13 @@ useEffect(() => {
 ** Bonuses
 * Add paging show only 10 posts and add button for next 10
 
+Date 25/12/2022
+### Solve Homework in class
+### homework/posts-comments/ver1
+* Posts && Comments
+* Install and use Axios
+* Custom Hook for fetch data
+* Use Object to cache the fetched data
 
 # Links
 
